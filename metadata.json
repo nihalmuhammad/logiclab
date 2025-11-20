@@ -1,0 +1,5 @@
+{
+  "name": "Logic Lab with Bit",
+  "description": "A fun, interactive puzzle game to learn digital logic gates (AND, OR, NOT) with a friendly robot helper named Bit. Connect circuits to solve puzzles!",
+  "requestFramePermissions": []
+}

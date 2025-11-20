@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logic Lab with Bit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Fredoka', 'sans-serif'],
+              mono: ['Menlo', 'Monaco', 'Courier New', 'monospace'],
+            },
+            colors: {
+              'toy-bg': '#2e1065', // Deep purple
+              'toy-panel': '#4c1d95',
+              'toy-accent': '#f472b6', // Pink
+              'toy-blue': '#38bdf8',
+              'toy-green': '#4ade80',
+              'toy-red': '#f87171',
+              'toy-yellow': '#fbbf24',
+            },
+            boxShadow: {
+              'toy': '0 8px 0px rgba(0,0,0,0.3)',
+              'toy-pressed': '0 2px 0px rgba(0,0,0,0.3)',
+              'glow': '0 0 20px rgba(255, 255, 255, 0.5)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #2e1065;
+        background-image: 
+          radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05) 0%, transparent 20%),
+          radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05) 0%, transparent 20%);
+        color: white;
+        margin: 0;
+        overflow: hidden;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #4c1d95; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #8b5cf6; 
+        border-radius: 6px;
+        border: 3px solid #4c1d95;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
